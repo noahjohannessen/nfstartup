@@ -7,10 +7,12 @@
         display: flex;
         flex-direction: column;
         margin: 0;
-        height: 100vh; /* Ensure full height */
+        height: 100vh;
       }
 
       header {
+        display: flex;
+        flex-direction: row;
         background-color: grey;
         color: black;
         padding: 20px;
@@ -21,19 +23,43 @@
         width: 80vw;
         height: 80vh;
         background-color: red;
-        margin: auto; /* Center horizontally */
+        margin: auto;
+      }
+
+      .data-box {
+        width: 80vw;
+        height: 80vh;
+        margin: auto;
+      }
+
+      .logo {
+        margin-left: 2vw;
+        margin-right: 45vw;
+      }
+
+      .header-text {
+        margin-left: 5vw;
+        margin-right: 5vw;
       }
     </style>
   </head>
   <body>
     <header>
-      navbar with logo, demo tab, about us, contact us
+      <div class="logo">
+        logo
+      </div>
+      <div class="header-text">
+        demo
+      </div>
+      <div class="header-text">
+        about
+      </div>
+      <div class="header-text">
+        contact
+      </div>
     </header>
     <div class="chat-box">
-      <p>Chat Box Content</p>
-    </div>
-    <div class="data-box">
-
+      Chat Box Content
     </div>
   </body>
 </html>
